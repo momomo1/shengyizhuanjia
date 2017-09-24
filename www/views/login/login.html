@@ -1,0 +1,33 @@
+<ion-view>
+  <ion-content>
+    <img class="full-image" src="views/login/image/login.jpg" alt="">
+    <div class="list list-inset">
+      <lable class="item item-input" for="">
+        <span class="input-label">帐号</span>
+        <input type="text" placeholder="手机号或者电子邮箱" ng-model="user.username">
+      </lable>
+
+      <lable class="item item-input" for="" style="margin-top:20px;">
+        <span class="input-label">密码</span>
+        <input type="text" placeholder="您的生意专家登录密码" ng-model="user.password">
+      </lable>
+    </div>
+    <div class="row padding">
+      <div class="col">
+        <button class="button button-energized button-block" ng-click="login()">登录</button>
+      </div>
+      <div class="col">
+        <a class="button button-energized button-block button-outline">注册新帐号</a>
+      </div>
+    </div>
+    <div class="row padding">
+      <a class="button button-dark button-clear"class="text-center" ui-sref="list-inset">忘记密码？</a>
+    </div>
+    <div class="row">
+      <a class="col button button-dark  button-clear text-center"href="">查看演示</a>
+    </div>
+  </ion-content>
+  <div class="row text-center" style="position:fixed;bottom: 6px;">
+    <h7 style="width: 100%"><span>@2015-2017 生意专家</span></h7>
+  </div>
+</ion-view>
