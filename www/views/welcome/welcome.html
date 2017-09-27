@@ -1,23 +1,24 @@
-<ion-view>
+<ion-view view-title="欢迎页">
   <ion-content>
-    <ion-slide-box>
+    <ion-slide-box show-pager="false">
       <ion-slide>
         <img class="full-image" src="/views/welcome/image/1.jpg" alt="">
-        </ion-slide>
+      </ion-slide>
       <ion-slide>
         <img class="full-image" src="/views/welcome/image/2.jpg" alt="">
       </ion-slide>
       <ion-slide>
         <img class="full-image" src="/views/welcome/image/3.jpg" alt="">
       </ion-slide>
-      </ion-slide-box>
+    </ion-slide-box>
     <div class="row padding">
       <div class="col">
-        <button class="button button-energized button-block" ng-click="login()" ui-sref="login">登录</button>
+        <a class="button button-energized button-block" ng-click="login()" ui-sref="login">登录</a>
       </div>
       <div class="col">
-        <a class="button button-energized button-block button-outline">注册新帐号</a>
+        <a class="button button-energized button-block button-outline">注册</a>
       </div>
+    </div>
     </div>
   </ion-content>
 </ion-view>

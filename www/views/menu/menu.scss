@@ -1,0 +1,16 @@
+$side-menu-bg-color:rgb(51,51,51);
+.side-background{
+  background-color: $side-menu-bg-color;
+}
+.side-menu{
+  margin-left: 20px;
+}
+
+.side-menu{
+  .item{
+    border-left: none;
+    background-color: $side-menu-bg-color;
+    color: rgb(130,130,130);
+    background-color: rgb(78,78,78);
+  }
+}

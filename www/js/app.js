@@ -47,6 +47,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       controller:'MainCtrl'
     })
 
+    .state('forgotpassword', {
+      url: '/forgotpassword',
+      templateUrl: 'views/forgotpassword/forgotpassword.html',
+    })
+
   .state('app.browse', {
       url: '/browse',
       views: {
@@ -65,16 +70,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-    .state('app.playlists', {
-      url: '/playlists',
+    .state('app.category-list', {
+      url: '/category-list',
       views: {
         'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
+          templateUrl: 'views/category/category-list.html',
+          controller: 'CategoryListCtrl'
         }
       }
     })
 
+    .state('app.category-add', {
+      url: '/category-add/:id/:name',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/category/category-add.html',
+          controller: 'CategoryAddCtrl'
+        }
+      }
+    })
     .state('list-inset', {
       url: '/list-inset',
           templateUrl: 'views/list-inset/list-inset.html',

@@ -1,0 +1,20 @@
+.col-border{
+  border: 1px solid #ececec;
+}
+.quick-action-item{
+  height: 25vm;
+  display: flex;
+  align-items: center;
+}
+.quick-action-item + .quick-action-item {
+margin-left: -1px;
+}
+.shortcut{
+  height: auto;
+}
+.quick-actions{
+  margin-left: 1px;
+}
+.quick-actions + .quick-actions{
+  margin-top: -1px;
+}
