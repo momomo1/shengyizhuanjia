@@ -1,5 +1,5 @@
 .col-border{
-  border: 1px solid #ececec;
+  border: 0px solid #ececec;
 }
 .quick-action-item{
   height: 25vm;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 .quick-action-item + .quick-action-item {
-margin-left: -1px;
+  margin-left: -1px;
 }
 .shortcut{
   height: auto;

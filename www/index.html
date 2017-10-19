@@ -16,8 +16,10 @@
       }
     </script>-->
 
-    <link href="css/ionic.app.min.css" rel="stylesheet">
+    <!--<link href="lib/ionic/css/ionic.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/ionic.app.css">
     <link href="css/style.css" rel="stylesheet">
+
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -28,19 +30,38 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+    <script src="lib/angular-messages/angular-messages.js"></script>
     <!-- your app's js -->
     <script src="js/app.js"></script>
 
+
+
     <script src="js/services/services.module.js"></script>
     <script src="js/services/localStorage.service.js"></script>
+    <script src="js/services/popup.service.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/directives/directives.module.js"></script>
+    <script src="js/directives/expander.directive.js"></script>
+    <script src="js/directives/company.directive.js"></script>
+    <script src="js/directives/equalto.directive.js"></script>
+    <script src="js/directives/phone.directive.js"></script>
+
 
     <script src="js/controllers.js"></script>
     <script src="js/main.controller.js"></script>
     <script src="views/login/login.controller.js"></script>
-    <script src="views/home/home.controller.js"></script>
+    <script src="views/Home/Home.controller.js"></script>
     <script src="views/category/category-list.controller.js"></script>
     <script src="views/category/category-add.controller.js"></script>
+    <script src="views/setting/setting.controller.js"></script>
+    <script src="views/shop/shop.controller.js"></script>
+    <script src="views/shop/shop-edit.controller.js"></script>
+    <script src="views/change-password.controller/change-password.controller.js"></script>
+    <script src="views/product/product-add.controller.js"></script>
+    <script src="views/category/category.service.js"></script>
+    <script src="views/product/product-list.controller.js"></script>
+    <script src="views/product/product.service.js"></script>
   </head>
 
   <body ng-app="starter">

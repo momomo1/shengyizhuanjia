@@ -1,20 +1,23 @@
-<ion-view view-title="">
-  <ion-content>
+<ion-view view-title="{{title}}">
+  <ion-content class="stable-bg">
     <div class="list">
-      <label class="item item-input" for="">
+      <label class="item item-input" for="" ng-if="category.ID==0">
         <span class="input-label">
           大分类
         </span>
-        <input type="text">
-      </label>
-      <div class="item item-divider"></div>
-        <label class="item item-input" for="">
-          <span class="input-label">
-            小分类
-          </span>
+        <input type="text" placeholder="商品大分类名字">
         </label>
-        <input type="text">
+      <div class="item item-divider"><span ng-if="category.ID !=0">{{category.Name}}</span></div>
+      <label class="item item-input" for="" ng-repeat="item in category.Children">
+        <span class="input-label">
+          小分类
+          </span>
+        <input type="text" placeholder="商品小分类名字">
+          </label>
     </div>
-    <button class="button button-positive button-clear icon-left ion-plus-circled">新增小分类</button>
-  </ion-content>
-</ion-view>
+    <button class="button button-positive button-clear icon-left ion-plus-circled" ng-click="addSubCategory()">新增小分类</button>
+    <div class="row padding-horizontal">
+      <button class="button button-energized button-block">保存</button>
+      </div>
+    </ion-content>
+  </ion-view>
